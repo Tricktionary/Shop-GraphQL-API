@@ -1,25 +1,26 @@
-# README
+### Shopify Challenge 2018
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Problem Requirements 
 
-Things you may want to cover:
+Every product should have a title, price, and inventory_count.
 
-* Ruby version
+Querying for all products should support passing an argument to only return products with available inventory. 
 
-* System dependencies
+Products should be able to be "purchased" which should reduce the inventory by 1. Products with no inventory cannot be purchased.
 
-* Configuration
+**Extra Credit** 
 
-* Database creation
+Fit these product purchases into the context of a simple shopping cart. 
 
-* Database initialization
+That means purchasing a product requires first creating a cart, adding products to the cart, and then "completing" the cart.
+The cart should contain a list of all included products, a total dollar amount (the total value of all products), and product inventory shouldn't reduce until after a cart has been completed.
 
-* How to run the test suite
+**Extra Extra Credit**
 
-* Services (job queues, cache servers, search engines, etc.)
+Bonus points for making your API (at least partly) secure, writing documentation that doesn’t suck, including unit tests, and/or building your API using GraphQL.
 
-* Deployment instructions
+## Context
 
-* ...
-# ShopAPI
+Welcome to my store where I sell an arangement of varied goods. 
+
+
