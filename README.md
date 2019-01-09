@@ -1,4 +1,4 @@
-### Shopify Challenge 2019
+# Shopify Challenge 2019
 
 ## Problem Requirements 
 
