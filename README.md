@@ -1,6 +1,6 @@
-### Shopify Challenge 2018
+### Shopify Challenge 2019
 
-## Problem Requirements 
+##Problem Requirements 
 
 Every product should have a title, price, and inventory_count.
 
@@ -20,7 +20,13 @@ The cart should contain a list of all included products, a total dollar amount (
 Bonus points for making your API (at least partly) secure, writing documentation that doesn’t suck, including unit tests, and/or building your API using GraphQL.
 
 ## Context
+This is a simple shop where you can purchase varied goods using API call
 
-Welcome to my store where I sell an arangement of varied goods. 
 
 
+## Get Started 
+
+- run `rails s` or `rails server`
+- Go to `localhost:3000/graphiql` 
+
+[back to top](#problem-requirements)
