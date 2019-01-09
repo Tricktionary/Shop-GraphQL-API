@@ -1,6 +1,6 @@
 ### Shopify Challenge 2019
 
-##Problem Requirements 
+## Problem Requirements 
 
 Every product should have a title, price, and inventory_count.
 
@@ -29,4 +29,9 @@ This is a simple shop where you can purchase varied goods using API call
 - run `rails s` or `rails server`
 - Go to `localhost:3000/graphiql` 
 
+## Endpoints
+
+
 [back to top](#problem-requirements)
+
+
