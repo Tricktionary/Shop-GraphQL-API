@@ -47,9 +47,9 @@ The cart is where the orders lie an when purchased all the order are filled and 
 
 
 ## Get Started 
-
+Before cloning the repo make sure you have `ruby` and `rails` installed on your machine
 - run `rails s` or `rails server`
-- Go to `localhost:3000/graphiql` 
+- Go to `localhost:3000` and you should see 
 
 ## Endpoints
 

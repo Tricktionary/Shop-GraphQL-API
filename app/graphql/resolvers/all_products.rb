@@ -2,7 +2,7 @@ class Resolvers::AllProducts < GraphQL::Function
  
   argument :available, types.Boolean, default_value: false
 
-  type Types::ProductType
+  type types[Types::ProductType]
   
   def call(_obj, args, _ctx)
     if args[:available]
