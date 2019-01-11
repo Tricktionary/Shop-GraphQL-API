@@ -11,8 +11,7 @@ class Resolvers::AddProductToCart < GraphQL::Function
     cart = Cart.find(args[:cartId])
     product = Product.find(args[:productId])
     quantity = args[:quantity]
-    order = Order.new(cart: cart, product: product, quantity: quantity)
-    cart.orders << order
+    LineItem.create(cart: cart, product: product, quantity: quantity)
     cart
   end
 end
