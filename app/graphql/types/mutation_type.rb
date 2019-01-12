@@ -5,4 +5,6 @@ Types::MutationType = GraphQL::ObjectType.define do
   field :addProductToCart, function: Resolvers::AddProductToCart.new
   field :createCart, function: Resolvers::CreateCart.new
   field :createProduct, function: Resolvers::CreateProduct.new
+  field :purchaseCart, function: Resolvers::PurchaseCart.new
+  
 end
