@@ -4,6 +4,6 @@ Types::CartType = GraphQL::ObjectType.define do
 
   field :id , !types.ID
   field :products, types[Types::ProductType]
-  field :value, !types.Float
+  field :total_value, !types.Float
   field :completed, !types.Boolean
 end 

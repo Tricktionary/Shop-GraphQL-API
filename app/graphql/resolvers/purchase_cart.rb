@@ -6,10 +6,10 @@ class Resolvers::PurchaseCart < GraphQL::Function
   
   def call(_obj, args, _ctx)
     cart = Cart.find(args[:cartId])
-     
+  
     valid = true
     for product in cart.products
-      item = LineItem.find(cart: cart, product: product)
+      item = LineItem.find_by(cart: cart, product: product)
       if product.inventory_count < item.quantity
         valid = false
       end
@@ -17,10 +17,11 @@ class Resolvers::PurchaseCart < GraphQL::Function
 
     if valid 
       for product in cart.products
-        item = LineItem.find(cart: cart, product: product)
+        item = LineItem.find_by(cart: cart, product: product)
         product.inventory_count - item.quantity
+        product.update(inventory_count: product.inventory_count - item.quantity)
       end 
-      cart.completed = true
+      cart.update(completed: true)
     else 
       cart 
     end 

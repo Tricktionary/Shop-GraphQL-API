@@ -20,8 +20,7 @@ The cart should contain a list of all included products, a total dollar amount (
 Bonus points for making your API (at least partly) secure, writing documentation that doesn’t suck, including unit tests, and/or building your API using GraphQL.
 
 ## Context
-This is a simple shop where you can purchase varied goods using API call. In this shop you can buy any Memes you want at a low cost 
-of 0.99$.
+This is a simple shop where you can purchase varied goods using API call. In this shop you can buy any Memes intellectual property you want at a low starting cost of 0.99$.
 
 The products we are see are selling in this shop are memes and they have a title, price ,and a number of inventory so we can track how much we have in stock
 
@@ -36,24 +35,29 @@ The cart is where the orders lie an when purchased all the order are filled and 
   - Price (Float)
   - Inventory Count (Int)
 
-**Order**
+**LineItem**
   - Amount (Int)
   - Product
   - Cart
 
 **Cart**
   - Value (Int)
-  - Products
+  - LineItems 
+
+![Schema](images/schema.png)
 
 
 ## Get Started 
-Before cloning the repo make sure you have `ruby` and `rails` installed on your machine
+Before cloning the repo make sure you have [ruby](https://www.ruby-lang.org/en/) and [rails](https://weblog.rubyonrails.org/2018/12/4/Rails-5-2-2-has-been-released/) installed on your machine
+
 - run `rails s` or `rails server`
 - Go to `localhost:3000` and you should see 
+![Rails](images/rails.png)
+- Congrats!  this means that the project was properly installed now go to `http://localhost:3000/graphiql` in order to see the GraphQL interface
+![GraphQL](images/graphql.png)
+- Now you should be able to use all the given endpoints in order to make transactions the my MEME shop
 
-## Endpoints
+[back to top](#shopify-challenge-2019)
 
-
-[back to top](#problem-requirements)
 
 
