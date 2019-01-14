@@ -1,5 +1,7 @@
 class Resolvers::CreateCart < GraphQL::Function
  
+  description "Create a cart object\n"
+
   type Types::CartType
   
   def call(_obj, args, _ctx)

@@ -57,6 +57,8 @@ Before cloning the repo make sure you have [ruby](https://www.ruby-lang.org/en/)
 ![GraphQL](images/graphql.png)
 - Now you should be able to use all the given endpoints in order to make transactions the my MEME shop
 
+## Documentation 
+
 [back to top](#shopify-challenge-2019)
 
 

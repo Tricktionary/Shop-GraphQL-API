@@ -1,11 +1,11 @@
 class Resolvers::PurchaseCart < GraphQL::Function
  
-  argument :cartId, types.ID
+  argument :cart_id, types.ID
 
   type Types::CartType
   
   def call(_obj, args, _ctx)
-    cart = Cart.find(args[:cartId])
+    cart = Cart.find(args[:cart_id])
   
     valid = true
     for product in cart.products
