@@ -11,7 +11,6 @@ class Resolvers::AddProductToCart < GraphQL::Function
   - The cart_id passed in is not valid \n
   - The product_id passed in is not valid \n
   - The quantity givem is less than or equal to 0 \n
-
   "
   
   argument :cart_id, !types.ID
