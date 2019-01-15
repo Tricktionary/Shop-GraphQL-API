@@ -61,41 +61,41 @@ Before cloning the repo make sure you have [ruby](https://www.ruby-lang.org/en/)
 This is a list of all operations that can be done to the products. It supports all CRUD operation (Create,Read,Update,Delete) in order to have a proper store setup
 
 ### Query
-***allProducts**
+**allProduct:s**
 A query that retrieves all products in the database. Can accept a boolean that if set to true returns all the products with an available inventort
 
-**getProduct**
+**getProduct:**
 A query that returns the specified product based on the ID sent to the query. Will error if the ID is invalid
 
-**getCart**
+**getCart:**
 A query that returns the cart of the ID that was sent to the query. Will error if the ID is invalid
 
 ### Mutation
-**purchaseProduct**
+**purchaseProduct:**
 A mutation that purchases 1 of the product from the product_id inputed
 
-***addProductToCart**
+**addProductToCart:**
 A mutation that adds a product to the cart given and also updates the price of the cart
 
-**createCart**
+**createCart:**
 A mutation that creates a new instance of the product in the database
 
-**createProduct**
+**createProduct:**
 A mutation that creates a new product
 
-**purchaseCart**
+**purchaseCart:**
 A mutation that purchases all the products in the cart
 
-**increaseInventory**
+**increaseInventory:**
 A mutation that adds more inventory to the given product based on the number given
 
-**updateProductTitle**
+**updateProductTitle:**
 A mutation that changes the products title
 
-**removeCart**
+**removeCart:**
 A mutation that removes all the instances of the given cart
 
-**removeProduct**
+**removeProduct:**
 A mutation that remove all instaces of the given product
 
 ## Documentation 
