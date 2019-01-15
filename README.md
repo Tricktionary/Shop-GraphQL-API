@@ -27,11 +27,11 @@ The cart should contain a list of all included products, a total dollar amount (
 
 **Extra Extra Credit**
 
-Bonus points for making your API (at least partly) secure, writing documentation that doesn’t suck, including unit tests, and/or building your API using GraphQL.
+Bonus points for making your API (at least partly) secure, writing documentation that doesn’t suck, including unit tests, and/or building your API using GraphQL.  
 [back to top](#shopify-challenge-2019)
 
 ## Context
-This is a simple shop where you can purchase varied goods using API call. In this shop you can buy any Memes intellectual property you want at a low starting cost of 0.99$.
+This is a simple shop where you can purchase varied goods using API call. In this shop you can buy any Memes intellectual property you want at a low starting cost of 0.99$.  
 
 ![Schema](images/meme.png)
 **An example of the Memes you can buy**
@@ -40,8 +40,7 @@ The products we are see are selling in this shop are memes and they have a title
 
 The order is what the Cart has as you can buy mutiple of the same memes in a cart transaction this will be what keep track of the product, how much of it you have and what cart it is stored in
 
-The cart is where the orders lie an when purchased all the order are filled and then the cart is marked as completed and the products inventory count will update
-
+The cart is where the orders lie an when purchased all the order are filled and then the cart is marked as completed and the products inventory count will update  
 [back to top](#shopify-challenge-2019)
 
 ## Schema 
@@ -60,7 +59,7 @@ The cart is where the orders lie an when purchased all the order are filled and 
   - Value (Int)
   - LineItems 
 
-![Schema](images/schema.png)
+![Schema](images/schema.png)  
 [back to top](#shopify-challenge-2019)
 
 
@@ -72,11 +71,11 @@ Before cloning the repo make sure you have [ruby](https://www.ruby-lang.org/en/)
 ![Rails](images/rails.png)
 - Congrats!  this means that the project was properly installed now go to `http://localhost:3000/graphiql` in order to see the GraphQL interface
 ![GraphQL](images/graphql.png)
-- Now you should be able to use all the given endpoints in order to make transactions the my MEME shop
+- Now you should be able to use all the given endpoints in order to make transactions the my MEME shop  
 [back to top](#shopify-challenge-2019)
 
 ## Operations 
-This is a list of all operations that can be done to the products. It supports all CRUD operation (Create,Read,Update,Delete) in order to have a proper store setup
+This is a list of all operations that can be done to the products. It supports all CRUD operation (Create,Read,Update,Delete) in order to have a proper store setup  
 [back to top](#shopify-challenge-2019)
 
 ### Queries
@@ -87,7 +86,7 @@ A query that retrieves all products in the database. Can accept a boolean that i
 A query that returns the specified product based on the ID sent to the query. Will error if the ID is invalid
 
 **getCart:**
-A query that returns the cart of the ID that was sent to the query. Will error if the ID is invalid
+A query that returns the cart of the ID that was sent to the query. Will error if the ID is invalid  
 [back to top](#shopify-challenge-2019)
 
 ### Mutations
@@ -116,7 +115,7 @@ A mutation that changes the products title
 A mutation that removes all the instances of the given cart
 
 **removeProduct:**
-A mutation that remove all instaces of the given product
+A mutation that remove all instaces of the given product  
 [back to top](#shopify-challenge-2019)
 
 ## Documentation 
@@ -127,7 +126,7 @@ A mutation that remove all instaces of the given product
 
 ![DocumentationWExample](images/documentationExample.png)
 **Example of Documentation found in GraphIQL**
-
+  
 [back to top](#shopify-challenge-2019)
 
 
