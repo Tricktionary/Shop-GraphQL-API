@@ -67,6 +67,8 @@ The cart is where the orders lie an when purchased all the order are filled and 
 ## Geting Started 
 Before cloning the repo make sure you have [ruby](https://www.ruby-lang.org/en/) and [rails](https://weblog.rubyonrails.org/2018/12/4/Rails-5-2-2-has-been-released/) installed on your machine
 
+- run `bundle` to install all ruby gems related to the project
+- run `rake db:migrate` and `rake db:seed` to migrate the database and seed it with data
 - run `rails s` or `rails server`
 - Go to `localhost:3000` and you should see 
 ![Rails](images/rails.png)
