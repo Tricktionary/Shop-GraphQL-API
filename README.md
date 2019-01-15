@@ -34,7 +34,7 @@ Bonus points for making your API (at least partly) secure, writing documentation
 ## Context
 This is a simple shop where you can purchase varied goods using API call. In this shop you can buy any Memes intellectual property you want at a low starting cost of 0.99$.  
 
-![Schema](images/meme.png)
+![Schema](images/meme.png)  
 **An example of the Memes you can buy**
 
 The products we are see are selling in this shop are memes and they have a title, price ,and a number of inventory so we can track how much we have in stock
