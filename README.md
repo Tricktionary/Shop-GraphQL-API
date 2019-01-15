@@ -71,7 +71,7 @@ Before cloning the repo make sure you have [ruby](https://www.ruby-lang.org/en/)
 - run `rake db:migrate` and `rake db:seed` to migrate the database and seed it with data
 - run `rails s` or `rails server`
 - Go to `localhost:3000` and you should see 
-![Rails](images/rails.png)
+![Rails](images/rails.png|width=50)
 - Congrats!  this means that the project was properly installed now go to `http://localhost:3000/graphiql` in order to see the GraphQL interface
 ![GraphQL](images/graphql.png)
 - Now you should be able to use all the given endpoints in order to make transactions the my MEME shop  
