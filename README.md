@@ -4,6 +4,7 @@
 - [Context](#context)
 - [Schema](#schema)
 - [Getting Started](#getting-started)
+- [Security](#security)
 - [Operations](#operations)
   - [Queries](#queries)
   - [Mutations](#mutations)
@@ -118,6 +119,32 @@ A mutation that removes all the instances of the given cart
 A mutation that remove all instaces of the given product  
 [back to top](#shopify-challenge-2019)
 
+## Security 
+All of the end points have **error handling** that lets the user know why their call has failed. This error handling is dealt with using GraphQl's execution errors  
+
+Example of error handling
+```
+{
+  "data": {
+    "getProduct": null
+  },
+  "errors": [
+    {
+      "message": "The product id doesn't exist",
+      "locations": [
+        {
+          "line": 2,
+          "column": 3
+        }
+      ],
+      "path": [
+        "getProduct"
+      ]
+    }
+  ]
+}
+```  
+[back to top](#shopify-challenge-2019)
 ## Documentation 
   In order to achieve somewhat decent documentation these steps were taken
   1. **Inline Documentation** Everything in this project that is fairly complicated has been documented with inline code comments
