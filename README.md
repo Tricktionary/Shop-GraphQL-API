@@ -1,4 +1,14 @@
 # Shopify Challenge 2019
+## Table of Contents
+- [Problem Requirements](#problem-requirements)
+- [Context](#context)
+- [Schema](#schema)
+- [Getting Started](#getting-started)
+- [Operations](#operations)
+  - [Queries](#queries)
+  - [Mutations](#mutations)
+- [Extended Functionality](#extended-functionality)
+- [Documentation](#documentation)
 
 ## Problem Requirements 
 
@@ -50,7 +60,7 @@ The cart is where the orders lie an when purchased all the order are filled and 
 ![Schema](images/schema.png)
 
 
-## Get Started 
+## Geting Started 
 Before cloning the repo make sure you have [ruby](https://www.ruby-lang.org/en/) and [rails](https://weblog.rubyonrails.org/2018/12/4/Rails-5-2-2-has-been-released/) installed on your machine
 
 - run `rails s` or `rails server`
@@ -63,7 +73,7 @@ Before cloning the repo make sure you have [ruby](https://www.ruby-lang.org/en/)
 ## Operations 
 This is a list of all operations that can be done to the products. It supports all CRUD operation (Create,Read,Update,Delete) in order to have a proper store setup
 
-### Query
+### Queries
 **allProduct:s**
 A query that retrieves all products in the database. Can accept a boolean that if set to true returns all the products with an available inventort
 
@@ -73,7 +83,7 @@ A query that returns the specified product based on the ID sent to the query. Wi
 **getCart:**
 A query that returns the cart of the ID that was sent to the query. Will error if the ID is invalid
 
-### Mutation
+### Mutations
 **purchaseProduct:**
 A mutation that purchases 1 of the product from the product_id inputed
 
