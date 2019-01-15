@@ -3,10 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.3.7'
 
-gem 'rspec-rails', '~> 3.8'
-
-gem 'rspec-graphql_matchers'
-
 gem 'graphql', '1.7.4'
 
 gem 'pry'
