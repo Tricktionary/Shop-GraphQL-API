@@ -1,5 +1,5 @@
 class Resolvers::CreateProduct < GraphQL::Function
-  description "Create a product object\n
+  description "Create a product record in the database\n
 
   ARGUMENTS \n\n
   - title(required): An ID that represents the cart we want to add products to \n
@@ -10,20 +10,26 @@ class Resolvers::CreateProduct < GraphQL::Function
   - The cart_id passed in is not valid \n
   - The price passed in is less than 0 \n
   - The quantity given is less than 0 \n
+  - The title give is an empty stringn
   "
 
-  argument :title, types.String
-  argument :price, types.Float
-  argument :inventory_count, types.Int
+  argument :title, !types.String
+  argument :price, !types.Float
+  argument :inventory_count, !types.Int
 
   type Types::ProductType
   
   def call(_obj, args, _ctx)
+    
     #Validation
     if args[:price] >= 0
       if args[:inventory_count] > 0
-        product = Product.create(title: args[:title], price: args[:price], inventory_count: args[:inventory_count])
-        product
+        if !args[:title].eql? ""
+          product = Product.create(title: args[:title], price: args[:price], inventory_count: args[:inventory_count])
+          product
+        else
+          GraphQL::ExecutionError.new("Cannot create a product with an empty string as a title")
+        end
       else
         GraphQL::ExecutionError.new("The inventory given must be greater than or equal to 0")
       end

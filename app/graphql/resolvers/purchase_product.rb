@@ -6,7 +6,7 @@ class Resolvers::PurchaseProduct < GraphQL::Function
   
   ERROR IF \n\n
   - The product_id is not valid \n
-  - If the product given is out of stock \n
+  - The product given is out of stock \n
   "
 
   argument :product_id, !types.ID

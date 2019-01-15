@@ -1,6 +1,6 @@
 class Resolvers::AddProductToCart < GraphQL::Function
   
-  description "Add a products to a given cart\n\n
+  description "Add a products to a given cart and updates the value of the cart\n\n
 
   ARGUMENTS \n\n
   - cart_id(required): An ID that represents the cart we want to add products to \n
@@ -14,9 +14,9 @@ class Resolvers::AddProductToCart < GraphQL::Function
 
   "
   
-  argument :cart_id, types.ID
-  argument :product_id, types.ID
-  argument :quantity, types.Int
+  argument :cart_id, !types.ID
+  argument :product_id, !types.ID
+  argument :quantity, types.Int , default_value: 1
 
 
   type Types::CartType
@@ -31,6 +31,7 @@ class Resolvers::AddProductToCart < GraphQL::Function
       if product
         if quantity >=0
           LineItem.create(cart: cart, product: product, quantity: quantity)
+          cart.update(total_value: (cart.total_value + (product.price * quantity)).round(2) )
           cart
         else 
           GraphQL::ExecutionError.new("The quantity given is not valid must be greater than 0")

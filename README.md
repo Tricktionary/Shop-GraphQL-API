@@ -57,7 +57,55 @@ Before cloning the repo make sure you have [ruby](https://www.ruby-lang.org/en/)
 ![GraphQL](images/graphql.png)
 - Now you should be able to use all the given endpoints in order to make transactions the my MEME shop
 
+## Operations 
+This is a list of all operations that can be done to the products. It supports all CRUD operation (Create,Read,Update,Delete) in order to have a proper store setup
+
+### Query
+***allProducts**
+A query that retrieves all products in the database. Can accept a boolean that if set to true returns all the products with an available inventort
+
+**getProduct**
+A query that returns the specified product based on the ID sent to the query. Will error if the ID is invalid
+
+**getCart**
+A query that returns the cart of the ID that was sent to the query. Will error if the ID is invalid
+
+### Mutation
+**purchaseProduct**
+A mutation that purchases 1 of the product from the product_id inputed
+
+***addProductToCart**
+A mutation that adds a product to the cart given and also updates the price of the cart
+
+**createCart**
+A mutation that creates a new instance of the product in the database
+
+**createProduct**
+A mutation that creates a new product
+
+**purchaseCart**
+A mutation that purchases all the products in the cart
+
+**increaseInventory**
+A mutation that adds more inventory to the given product based on the number given
+
+**updateProductTitle**
+A mutation that changes the products title
+
+**removeCart**
+A mutation that removes all the instances of the given cart
+
+**removeProduct**
+A mutation that remove all instaces of the given product
+
 ## Documentation 
+  In order to achieve somewhat decent documentation these steps were taken
+  1. **Inline Documentation** Everything in this project that is fairly complicated has been documented with inline code comments
+  2. **README** The README has been created with the intent on helping users set-up the api and understand the API relatively easy
+  3. **GraphIQL** The GraphIQL interface has been all documented for each endpoint
+
+![DocumentationWExample](images/documentationExample.png)
+**Example of Documentation found in GraphIQL**
 
 [back to top](#shopify-challenge-2019)
 

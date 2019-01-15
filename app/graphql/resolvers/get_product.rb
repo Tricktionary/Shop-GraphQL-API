@@ -5,9 +5,7 @@ class Resolvers::GetProduct < GraphQL::Function
   - product_id(required): The id that reference the product you want to return\n\n
 
   ERROR IF \n\n
-  - The cart_id passed in is not valid \n
-  - The price passed in is less than 0 \n
-  - The quantity given is less than 0 \n
+  - The product_id passed in is not valid \n
   "
   argument :product_id, !types.ID
 
