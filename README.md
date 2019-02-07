@@ -59,6 +59,7 @@ The cart is where the orders lie an when purchased all the order are filled and 
 **Cart**
   - Value (Int)
   - LineItems 
+  - Completed (Boolean)
 
 ![Schema](images/schema.png)  
 [back to top](#shopify-challenge-2019)
