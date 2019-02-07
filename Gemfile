@@ -5,6 +5,8 @@ ruby '2.3.7'
 
 gem 'graphql', '1.7.4'
 
+gem 'rspec-rails', '~> 3.8'
+
 gem 'pry'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
