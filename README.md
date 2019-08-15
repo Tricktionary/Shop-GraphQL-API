@@ -1,4 +1,4 @@
-# Shopify Challenge 2019
+# Shop GraphQL API
 ## Table of Contents
 - [Problem Requirements](#problem-requirements)
 - [Context](#context)
